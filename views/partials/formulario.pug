@@ -1,0 +1,15 @@
+section
+  form(action='/productos' method='post')
+    .mb-3
+      label.form-label(for='inputName')
+        strong Nombre
+      input#inputName.form-control(type='text' name='name' required='')
+    .mb-3
+      label.form-label(for='inputPrice')
+        strong Precio
+      input#inputPrice.form-control(type='number' name='price' required='')
+    .mb-3
+      label.form-label(for='inputFoto')
+        strong Foto URL
+      input#inputFoto.form-control(type='text' name='photo' required='')
+    button.btn.btn-success.btn-lg(type='submit') Enviar
